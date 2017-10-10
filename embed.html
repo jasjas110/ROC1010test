@@ -12,9 +12,10 @@ p:first-of-type {
 <script src="https://plotdb.com/lib/showdown/1.5.0/index.min.js"></script>
 <script src="https://plotdb.com/lib/d3/3.5.12/index.min.js"></script>
 <script>
-
+	
 plotdb.load(12782, function(chart) {
-	chart.attach(document.getElementById("plotdb"), {});
+    chart.attach(document.getElementById("plotdb"), {});
+    if(_jf) {
+        _jf.flush();
+    }
 });
-
-</script>
